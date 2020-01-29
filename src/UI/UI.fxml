@@ -13,7 +13,7 @@
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <Menu text="File">
-                <MenuItem text="New"/>
+                <MenuItem text="New" onAction="#onTest"/>
                 <MenuItem text="Open"/>
                 <MenuItem text="Save"/>
                 <MenuItem text="Save As"/>
