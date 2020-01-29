@@ -1,0 +1,51 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<BorderPane prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8.0.65"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="UI.Controller">
+
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu text="File">
+                <MenuItem text="New"/>
+                <MenuItem text="Open"/>
+                <MenuItem text="Save"/>
+                <MenuItem text="Save As"/>
+                <MenuItem text="Exit"/>
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem text="Cut"/>
+                <MenuItem text="Copy"/>
+                <MenuItem text="Paste"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TextArea fx:id="areaText" prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+
+    <bottom>
+        <HBox fx:id="statusBar" prefHeight="10.0" prefWidth="200.0">
+            <style>
+                -fx-background-color: #DCDCDC;
+                -fx-padding: 1;
+                -fx-spacing: 5;
+            </style>
+            <Label text="Line: x"/>
+            <Label text="Col: y"/>
+        </HBox>
+
+    </bottom>
+
+
+</BorderPane>
