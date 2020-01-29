@@ -31,7 +31,18 @@
     </top>
 
     <center>
-        <TextArea fx:id="areaText" prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+        <TextArea fx:id="areaText" prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <style>
+            .text-area   {
+            -fx-control-inner-background:#000000;
+            -fx-font-family: Monospaced;
+            -fx-font-size: 14;
+            -fx-highlight-fill: #338fff;
+            -fx-highlight-text-fill: #ffffff;
+            -fx-text-fill: #000000;
+            }
+        </style>
+        </TextArea>
     </center>
 
     <bottom>
